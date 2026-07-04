@@ -5,7 +5,7 @@ Finds text a web page hides from human eyes but exposes to AI browsing agents.
 AI agents (Claude in Chrome, browsing agents in general) parse the rendered DOM,
 not just what's visually on screen. That means a page can hide instructions from
 a human — white text on white, `font-size:0`, off-canvas positioning,
-`aria-hidden`, hidden inputs, alt text — while an agent reading the DOM sees them
+`aria-hidden`, hidden inputs, alt text - while an agent reading the DOM sees them
 just fine. This is a live prompt-injection vector for agentic browsing, and there
 is no reliable defense against it yet.
 
@@ -67,7 +67,7 @@ at an AI agent, each boxed in red and scored.
 
 ## Scope / limitations
 
-This is static analysis + heuristics, not a model call — it's fast and cheap by
+This is static analysis + heuristics, not a model call - it's fast and cheap by
 design, but it's a detector, not a guarantee. It won't catch injections that use
 zero-width Unicode characters within otherwise-visible text, or content injected
 dynamically after the scan's `networkidle` wait. Treat high scores as "worth a
