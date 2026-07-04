@@ -4,7 +4,7 @@ Finds text a web page hides from human eyes but exposes to AI browsing agents.
 
 AI agents (Claude in Chrome, browsing agents in general) parse the rendered DOM,
 not just what's visually on screen. That means a page can hide instructions from
-a human — white text on white, `font-size:0`, off-canvas positioning,
+a human - white text on white, `font-size:0`, off-canvas positioning,
 `aria-hidden`, hidden inputs, alt text - while an agent reading the DOM sees them
 just fine. This is a live prompt-injection vector for agentic browsing, and there
 is no reliable defense against it yet.
@@ -12,7 +12,7 @@ is no reliable defense against it yet.
 `invisible-ink` points a real headless browser at a URL (or local HTML file),
 resolves computed CSS the same way an agent's DOM read would, flags every text
 node that is programmatically present but visually suppressed, and scores it by
-how instruction-like the hidden text reads. Static HTML parsing isn't enough —
+how instruction-like the hidden text reads. Static HTML parsing isn't enough -
 most of these tricks only reveal themselves after the CSS cascade and layout run.
 
 ## Install
