@@ -61,7 +61,7 @@ hiding techniques and two non-visual-channel injections planted in it. Run:
 node cli.js demo/poisoned.html
 ```
 
-and open the generated `reports/demo_poisoned_html.html` — the visible page
+and open the generated `reports/demo_poisoned_html.html` - the visible page
 looks completely benign; the report shows seven-plus hidden instructions aimed
 at an AI agent, each boxed in red and scored.
 
