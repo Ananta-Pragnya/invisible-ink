@@ -1,0 +1,18 @@
+{
+  "name": "invisible-ink",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Finds text a web page hides from human eyes but exposes to AI browsing agents (prompt-injection defense for agentic browsers).",
+  "main": "cli.js",
+  "type": "commonjs",
+  "bin": {
+    "invisible-ink": "./cli.js"
+  },
+  "scripts": {
+    "scan": "node cli.js",
+    "demo": "node cli.js demo/poisoned.html"
+  },
+  "dependencies": {
+    "playwright": "^1.47.0"
+  }
+}
